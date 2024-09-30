@@ -1,0 +1,107 @@
+일부 속성에서 중복된 값을 제거하거나 정리했습니다.
+css
+코드 복사
+html {
+  background: linear-gradient(150deg, #b39bfe 0%, #8c00a1 100%);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.cal-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.62);
+  color: white;
+  text-align: right;
+}
+
+.cal-previous-preview {
+  opacity: 0.7;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.cal-current-preview {
+  font-size: 25px;
+}
+
+.cal-body {
+  margin-top: -4px;
+  background-color: white;
+}
+
+.cal-space {
+  display: flex;
+  width: 100%;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.cal-space > button {
+  flex: 1;
+  border: none;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: rgb(250, 241, 255);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.space-2 {
+  flex: 2;
+}
+
+@media (min-width: 601px) {
+  .cal-space > button:hover {
+    background-color: white;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cal-header {
+    height: 20%;
+    padding: 10px;
+  }
+
+  .cal-body {
+    height: calc(100% - 20% - 10px + 4px); /* 확인이 필요함 */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cal-space > button {
+    width: auto;
+    height: auto;
+  }
+}
