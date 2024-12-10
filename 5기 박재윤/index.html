@@ -1,11 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Montserrat&family=Nanum+Gothic:wght@700&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto&family=Urbanist&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>계산기앱 만들기 프로젝트 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="cal">
+          <div class="cal-header">
+            <div data-previous-preview class="cal-previous-preview"></div>
+            <div data-current-preview class="cal-current-preview"></div>
+          </div>
+          <div class="cal-body">
+            <div class="cal-space">
+              <button data-btn-reset class="space-2">AC</button>
+              <button data-btn-delete>DEL</button>
+              <button data-btn-divide data-btn-operation>÷</button>
+            </div>
+            <div class="cal-space">
+              <button data-btn-number>1</button>
+              <button data-btn-number>2</button>
+              <button data-btn-number>3</button>
+              <button data-btn-multiply data-btn-operation>x</button>
+            </div>
+            <div class="cal-space">
+              <button data-btn-number>4</button>
+              <button data-btn-number>5</button>
+              <button data-btn-number>6</button>
+              <button data-btn-minus data-btn-operation>-</button>
+            </div>
+            <div class="cal-space">
+              <button data-btn-number>7</button>
+              <button data-btn-number>8</button>
+              <button data-btn-number>9</button>
+              <button data-btn-plus data-btn-operation>+</button>
+            </div>
+            <div class="cal-space">
+              <button data-btn-number>.</button>
+              <button data-btn-number>0</button>
+              <button data-btn-eqaul data-btn-operation class="space-2">
+                =
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
